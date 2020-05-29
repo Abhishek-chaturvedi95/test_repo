@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title style="color:red;font-size:15;">JavasScrip Appplication</title>
+<script>
+function jsf() {
+	var person = prompt("Please eneter you name" , "Abhishek");
+	if(person != ""){
+		document.getElementById("test").innerHTML = "Hello " + person + " how are you ?";
+	}else{
+		alert("Please enter a name");
+	}
+}
+
+function math1() {
+	var num = document.getElementById("mathInput").value;
+	alert("your number x 5 = " + num*5);
+}
+</script>
+
+</head>
+<body onload="alert('The page has loaded, okay??');">
+<a href = "https://www.google.com/" target="_blank"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Link to google.com"></a>
+<p> JavasScrip Prompt box </p>
+<button onclick="jsf()">See the magic</button>
+<p id="test"></p>
+
+<p> Math input prompt</p>
+<button onclick="alert('the test worked');"> Alert test</button>
+<input id="mathInput" type="number"><button onclick="math1()">Multiply by 5</button>
+</body>
+</html>
